@@ -19,11 +19,13 @@ span.addEventListener("click", () => {
     const newList = mySort(list);
 
     const tbody = document.querySelector("tbody");
+    // innerHTML用来存储dom节点
     tbody.innerHTML = "";
     newList.forEach((item, index) => {
         // 创造dom节点
         const tr = document.createElement("tr");
         const th = document.createElement("th");
+        // 给dom节点添加内容实用textContent
         th.textContent = index + 1;
         const td = document.createElement("td");
         td.textContent = item;
