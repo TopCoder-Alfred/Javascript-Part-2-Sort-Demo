@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-size: 10px;
+    user-select: none;
+}
+
+body {
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+
+input {
+    font-size: 3.2rem;
+}
+
+span {
+    text-align: center;
+    border: 1px solid;
+    margin: 1rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease-in-out;
+}
+
+span:active {
+    background-color: black;
+    color: white;
+}
+
+
+table, th, td {
+    /* 当子级使用border设置边框颜色时有两种情况: 第一种是如果自己不定义颜色并且父级设置过color属性的话则该border的颜色沿用父类定义的color. 第二种情况是如果自己定义颜色则使用自己定义的颜色作为border的颜色 */
+    border: 1px solid;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    width: 10rem;
+    text-align: center;
+}
